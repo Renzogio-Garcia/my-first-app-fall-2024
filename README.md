@@ -24,7 +24,9 @@ pip install -r requirements.txt
 
 [Obtain an API Key](https://www.alphavantage.co/support/#api-key) from AlphaVantage.
 
-Create a ".env" file and add contents like the following (using your own AlphaVantage API Key):
+[Obtain an API Key](https://sendgrid.com/en-us/2?adobe_mc_sdid=SDID%3D14497B71DE8F5F8B-3F810B9ED0886A80%7CMCORGID%3D32523BB96217F7B60A495CB6%40AdobeOrg%7CTS%3D1731112951&adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F) from Sendgrid
+
+Create a ".env" file and add contents like the following (using your own AlphaVantage API Key, Sendgrid API Key, and Sendgrid Sender Address):
 
 ```sh
 # this is the ".env" file:
