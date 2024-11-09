@@ -1,9 +1,11 @@
+# this is the app/unemployment.py file...
+
 # LOCAL DEV (ENV VARS)
 
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
-load_dotenv() # looks into .env file
+#load_dotenv()
 
 API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 
@@ -20,6 +22,9 @@ parsed_response = json.loads(response.text)
 print(type(parsed_response))
 pprint(parsed_response)
 
+data = parsed_response["data"]
+
+
 # Challenge A
 #
 # What is the most recent unemployment rate? And the corresponding date?
@@ -29,6 +34,8 @@ print("-------------------------")
 print("LATEST UNEMPLOYMENT RATE:")
 #print(data[0])
 print(f"{data[0]['value']}%", "as of", data[0]["date"])
+
+
 
 
 # Challenge B
@@ -46,6 +53,7 @@ rates_this_year = [float(d["value"]) for d in this_year]
 print("-------------------------")
 print("AVG UNEMPLOYMENT THIS YEAR:", f"{mean(rates_this_year)}%")
 print("NO MONTHS:", len(this_year))
+
 
 # Challenge C
 #
