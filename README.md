@@ -29,6 +29,10 @@ Create a ".env" file and add contents like the following (using your own AlphaVa
 ```sh
 # this is the ".env" file:
 ALPHAVANTAGE_API_KEY="..."
+
+# optionally:
+SENDGRID_API_KEY = ""
+SENDGRID_SENDER_ADDRESS = ""
 ```
 
 ## Usage
@@ -56,4 +60,10 @@ Run the RPS game:
 
 ```sh
 python app/rps.py
+```
+
+Run the example email sending file:
+
+```sh
+python app/email_service.py
 ```
