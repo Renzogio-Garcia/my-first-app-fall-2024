@@ -48,7 +48,7 @@ def format_pct(my_rate):
 if __name__ == "__main__":
 
 
-    data = fetch_unemployment_json()
+    data = fetch_unemployment_data()
 
     # Challenge A
     #
