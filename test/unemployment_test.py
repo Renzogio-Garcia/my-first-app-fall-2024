@@ -1,9 +1,9 @@
-from app.unemployment import fetch_unemployment_json
+from app.unemployment import fetch_unemployment_data
 
 
 def test_data_fetching():
 
-    data = fetch_unemployment_json()
+    data = fetch_unemployment_data()
     assert isinstance(data, list)
     assert len(data) > 900
 
